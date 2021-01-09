@@ -1,0 +1,10 @@
+api
+{
+    "api-1":{"endpoint":"device/",
+    "returns":"qr_code_token & verification code",
+    "input":"serial_number &device_id",
+    "methods-allowed":"GET",
+    "input_format":"http://2d8bef47c081.ngrok.io/device?serial_number={seria_number}&device_id={device_id}"
+    },
+    "api-2":{"endpoint":"devicetoken","returns":"Registers a device","input":"http://127.0.0.1/devicetoken?token={qr_code_token}-{location}-{organisation_id}","methods-allowed":"GET","input_format":""},   
+}
